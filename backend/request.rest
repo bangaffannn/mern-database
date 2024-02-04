@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/65bef61950ce1cc9f1b7140c
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "John",
+    "email": "John@gmail.com",
+    "gender": "Male"
+}
+
+###
+PATCH http://localhost:5000/users/65bef61950ce1cc9f1b7140c
+Content-Type: application/json
+
+{
+    "name": "MAGM",
+    "email": "MAGM@gmail.com",
+    "gender": "Male"
+}
+
+###
+DELETE http://localhost:5000/users/65bf040824362afab4f39a2d
